@@ -1,0 +1,50 @@
+[
+  {
+    "id": "wraps",
+    "tabLabel": "Wraps",
+    "eyebrow": "SIGNATURE WRAP",
+    "title": "THE KEBABX WRAP",
+    "cardTitle": "Signature Wrap",
+    "description": "Slow-roasted meat, crisp salad and house sauces, wrapped in fresh flatbread. Confirm details with the owner.",
+    "shortDesc": "Freshly prepared signature wrap",
+    "allergens": "To be confirmed",
+    "price": "$—",
+    "icon": "🌯"
+  },
+  {
+    "id": "kebab-boxes",
+    "tabLabel": "Kebab boxes",
+    "eyebrow": "LOADED BOXES",
+    "title": "THE KEBABX BOX",
+    "cardTitle": "Kebab Box",
+    "description": "Grilled meat served with your choice of sides and sauces. Confirm details with the owner.",
+    "shortDesc": "A loaded kebab box",
+    "allergens": "To be confirmed",
+    "price": "$—",
+    "icon": "🥡"
+  },
+  {
+    "id": "chips",
+    "tabLabel": "Chips",
+    "eyebrow": "HOT & CRISPY",
+    "title": "LOADED CHIPS & SIDES",
+    "cardTitle": "Chips & Sides",
+    "description": "Golden chips and tasty sides. Confirm available items with the owner.",
+    "shortDesc": "Hot and crispy sides",
+    "allergens": "To be confirmed",
+    "price": "$—",
+    "icon": "🍟"
+  },
+  {
+    "id": "drinks",
+    "tabLabel": "Drinks",
+    "eyebrow": "ICE COLD",
+    "title": "DRINKS & REFRESHERS",
+    "cardTitle": "Cold Drinks",
+    "description": "Explore the drinks available at your local shop.",
+    "shortDesc": "Something refreshing",
+    "allergens": "To be confirmed",
+    "price": "$—",
+    "icon": "🥤"
+  }
+]

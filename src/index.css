@@ -1,0 +1,292 @@
+:root {
+  --bg-dark: #0e0e10;
+  --bg-card: #16161a;
+  --bg-pill: #1f1f24;
+  --orange: #ff4d1c;
+  --text-white: #f5f3ef;
+  --text-muted: #9e9b94;
+  --border: #28282f;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* 1. TOP NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--text-white);
+}
+
+/* BUTTONS */
+.btn {
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, background 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-orange {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background-color: #ff6236;
+}
+
+.btn-dark {
+  background-color: transparent;
+  border-color: var(--border);
+  color: var(--text-white);
+}
+
+.btn-dark:hover {
+  border-color: var(--text-white);
+}
+
+/* 2. HERO DASHBOARD GRID */
+.hero {
+  padding: 3.5rem 0 2.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--orange);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  line-height: 0.98;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.hero-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 46ch;
+  margin-bottom: 1rem;
+}
+
+.allergen-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: var(--bg-pill);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.hero-price {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--orange);
+  margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* 3. RIGHT SIDE: 3D SPOTLIGHT CARD */
+.spotlight-stage {
+  perspective: 1000px;
+}
+
+.spotlight-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out, border-color 0.2s ease;
+  position: relative;
+}
+
+.spotlight-card:hover {
+  border-color: rgba(255, 77, 28, 0.5);
+}
+
+/* The Radial Orange Ember Glow from your PDF */
+.food-photo-box {
+  height: 290px;
+  border-radius: 12px;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 77, 28, 0.42) 0%,
+    rgba(160, 35, 10, 0.15) 45%,
+    rgba(18, 18, 22, 0.95) 80%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transform: translateZ(35px); /* 3D Pop-Out Layer! */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.food-emoji-3d {
+  font-size: 4.5rem;
+  transform: translateZ(60px);
+  filter: drop-shadow(0 16px 20px rgba(0, 0, 0, 0.6));
+  margin-bottom: 0.5rem;
+}
+
+.food-photo-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--text-white);
+  opacity: 0.85;
+}
+
+.spotlight-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transform: translateZ(20px);
+}
+
+.spotlight-footer h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.spotlight-footer p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.spotlight-price {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--orange);
+}
+
+/* 4. BOTTOM HERO CATEGORY SWITCHER (Wraps, Kebab boxes, Chips, Drinks) */
+.hero-tabs {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  background: var(--bg-card);
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.hero-tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero-tab-btn:hover {
+  color: var(--text-white);
+}
+
+.hero-tab-btn.active {
+  background: var(--orange);
+  color: #fff;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .hero-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
