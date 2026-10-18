@@ -2,7 +2,7 @@
   {
     "id": "Kebabs",
     "tabLabel": "Kebabs",
-     "image": "/src/assets/kebab.jpeg",
+    "image": "/src/assets/kebab.jpeg",
     "eyebrow": "SIGNATURE WRAP",
     "title": "THE KEBABX WRAP",
     "cardTitle": "Signature Wrap",

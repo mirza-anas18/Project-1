@@ -1,10 +1,22 @@
 
 import { useState } from 'react';
 
+const images = import.meta.glob('../assets/*', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+});
+
 function SpotlightCard({ activeItem }) {
   const [tiltStyle, setTiltStyle] = useState({
     transform: 'rotateX(0deg) rotateY(0deg)',
   });
+
+  const filename = activeItem?.image?.split('/').pop();
+
+  const imagePath = Object.entries(images).find(([path]) =>
+    path.endsWith(`/${filename}`)
+  )?.[1];
 
   function handleMouseMove(e) {
     const card = e.currentTarget.getBoundingClientRect();
@@ -37,12 +49,16 @@ function SpotlightCard({ activeItem }) {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        <img
-          key={activeItem.image}
-          src={activeItem.image}
-          alt={activeItem.title}
-          className="kebab-image"
-        />
+        {imagePath ? (
+          <img
+            key={imagePath}
+            src={imagePath}
+            alt={activeItem?.title ?? 'KebabX featured food'}
+            className="kebab-image"
+          />
+        ) : (
+          <p>Hero image not found: {filename}</p>
+        )}
       </div>
     </div>
   );
