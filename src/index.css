@@ -112,7 +112,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
+}
+
+.spotlight-stage {
+  align-self: start;
 }
 
 .eyebrow {
