@@ -1,0 +1,280 @@
+{
+  "branch": {
+    "name": "Kebabs At Lonsdale",
+    "address": "245 Lonsdale Street, Melbourne, VIC 3000",
+    "currency": "AUD",
+    "uberEatsUrl": "https://www.ubereats.com/au/store/kebabs-at-lonsdale/-3gYzMfXWu-gdbwR8u5C_w"
+  },
+  "items": [
+    {
+      "id": "falafel-hsp",
+      "name": "Falafel HSP",
+      "category": "Halal Snack Pack",
+      "description": "Falafel served with hot chips and sauces.",
+      "price": 18.13,
+      "image": "/falafel-hsp.jpg"
+    },
+    {
+      "id": "meat-and-salad",
+      "name": "Meat and Salad",
+      "category": "Halal Snack Pack",
+      "description": "Meat served with salad.",
+      "price": 19.95,
+      "options": ["Lamb", "Chicken", "Mixed"],
+      "image": "/meat-and-salad.jpg"
+    },
+    {
+      "id": "lamb-hsp",
+      "name": "Lamb HSP",
+      "category": "Halal Snack Pack",
+      "description": "Lamb served with hot chips and sauces.",
+      "price": 19.95,
+      "image": "/lamb-hsp.jpg"
+    },
+    {
+      "id": "mixed-hsp",
+      "name": "Mixed HSP",
+      "category": "Halal Snack Pack",
+      "description": "Mixed meat served with hot chips and sauces.",
+      "price": 19.95,
+      "image": "/mixed-hsp.jpg"
+    },
+    {
+      "id": "meat-and-rice",
+      "name": "Meat and Rice",
+      "category": "Halal Snack Pack",
+      "description": "Meat served with basmati rice.",
+      "price": 19.95,
+      "options": ["Lamb", "Chicken", "Mixed"],
+      "image": "/meat-and-rice.jpg"
+    },
+    {
+      "id": "mixed-platter",
+      "name": "Mixed Platter",
+      "category": "Meal on Plate",
+      "description": "Served with rice or chips, two dips, salad and bread.",
+      "price": 25.94,
+      "options": ["Rice", "Chips"],
+      "image": "/mixxed-platter.jpg"
+    },
+    {
+      "id": "lamb-platter",
+      "name": "Lamb Platter",
+      "category": "Meal on Plate",
+      "description": "Served with rice or chips, two dips, salad and bread.",
+      "price": 25.94,
+      "options": ["Rice", "Chips"],
+      "image": "/lamb-platter.jpg"
+    },
+    {
+      "id": "chicken-platter",
+      "name": "Chicken Platter",
+      "category": "Meal on Plate",
+      "description": "Served with rice or chips, two dips, salad and bread.",
+      "price": 25.94,
+      "options": ["Rice", "Chips"],
+      "image": "/chicken-platter.jpg"
+    },
+    {
+      "id": "falafel-platter",
+      "name": "Falafel Platter",
+      "category": "Meal on Plate",
+      "description": "Served with rice or chips, two dips, salad and bread.",
+      "price": 25.94,
+      "options": ["Rice", "Chips"],
+      "image": "/falafel-platter.jpg"
+    },
+    {
+      "id": "chicken-kebab",
+      "name": "Chicken Kebab",
+      "category": "Kebabs",
+      "description": "Chicken kebab with salad and sauces.",
+      "price": 18.95,
+      "image": "/chicken-kebab.jpg"
+    },
+    {
+      "id": "lamb-kebab",
+      "name": "Lamb Kebab",
+      "category": "Kebabs",
+      "description": "Lamb kebab with salad and sauces.",
+      "price": 18.95,
+      "image": "/lamb-kebab.jpg"
+    },
+    {
+      "id": "mix-kebab",
+      "name": "Mix Kebab",
+      "category": "Kebabs",
+      "description": "Mixed meat kebab with salad and sauces.",
+      "price": 18.95,
+      "image": "/mix-kebab.jpg"
+    },
+    {
+      "id": "falafel-kebab",
+      "name": "Falafel Kebab",
+      "category": "Kebabs",
+      "description": "Falafel kebab with salad and hummus.",
+      "price": 18.13,
+      "image": "/falafel-kebab.jpg"
+    },
+    {
+      "id": "lamb-gozleme",
+      "name": "Lamb Gozleme",
+      "category": "Kebabs",
+      "description": "Gozleme filled with lamb.",
+      "price": 19.95,
+      "image": "/lamb-gozleme.jpg"
+    },
+    {
+      "id": "spinach-fetta-gozleme",
+      "name": "Spinach Fetta Gozleme",
+      "category": "Kebabs",
+      "description": "Gozleme filled with spinach and fetta.",
+      "price": 19.95,
+      "image": "/spinach-fetta-gozleme.jpg"
+    },
+    {
+      "id": "chicken-gozleme",
+      "name": "Chicken Gozleme",
+      "category": "Kebabs",
+      "description": "Gozleme filled with chicken.",
+      "price": 19.95,
+      "image": "/chicken-gozleme.jpg"
+    },
+    {
+      "id": "hummus-container",
+      "name": "Hummus Container",
+      "category": "Dips",
+      "description": "Traditional hummus dip.",
+      "price": 7.95,
+      "image": "/hummus-container.jpg"
+    },
+    {
+      "id": "chilli-dip",
+      "name": "Chilli Dip",
+      "category": "Dips",
+      "description": "Spicy chilli dip.",
+      "price": 7.95,
+      "image": "/chilli-dip.jpg"
+    },
+    {
+      "id": "tzatziki-dip",
+      "name": "Tzatziki Dip",
+      "category": "Dips",
+      "description": "Yogurt-based dip with cucumber and garlic.",
+      "price": 7.95,
+      "image": "/tzatziki-dip.jpg"
+    },
+    {
+      "id": "small-chips",
+      "name": "Small Chips",
+      "category": "Chips",
+      "description": "Crispy, golden fried potato strips.",
+      "price": 7.95,
+      "image": "/small-chips.jpg"
+    },
+    {
+      "id": "large-chips",
+      "name": "Large Chips",
+      "category": "Chips",
+      "description": "Thick-cut potato strips, cooked to a crispy perfection.",
+      "price": 11.50,
+      "image": "/large-chips.jpg"
+    },
+    {
+      "id": "coke-classic-600ml",
+      "name": "Coke Classic 600ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 5.85,
+      "image": "/coke-classic-600ml.jpg"
+    },
+    {
+      "id": "coke-no-sugar-600ml",
+      "name": "Coke No Sugar 600ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 5.85,
+      "image": "/coke-no-sugar-600ml.jpg"
+    },
+    {
+      "id": "fanta-600ml",
+      "name": "Fanta 600ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 5.85,
+      "image": "/fanta-600ml.jpg"
+    },
+    {
+      "id": "sprite-600ml",
+      "name": "Sprite 600ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 5.85,
+      "image": "/sprite-600ml.jpg"
+    },
+    {
+      "id": "fuze-tea-lemon",
+      "name": "Fuze Tea Lemon",
+      "category": "Drinks",
+      "description": "",
+      "price": 5.85,
+      "image": "/fuze-tea-lemon.jpg"
+    },
+    {
+      "id": "fuze-tea-peach",
+      "name": "Fuze Tea Peach",
+      "category": "Drinks",
+      "description": "",
+      "price": 5.85,
+      "image": "/fuze-tea-peach.jpg"
+    },
+    {
+      "id": "coke-395ml",
+      "name": "Coke 395ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 4.50,
+      "image": "/coke-395ml.jpg"
+    },
+    {
+      "id": "coke-no-sugar-395ml",
+      "name": "Coke No Sugar 395ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 4.50,
+      "image": "/coke-no-sugar-395ml.jpg"
+    },
+    {
+      "id": "fanta-395ml",
+      "name": "Fanta 395ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 4.50,
+      "image": "/fanta-395ml.jpg"
+    },
+    {
+      "id": "sprite-395ml",
+      "name": "Sprite 395ml",
+      "category": "Drinks",
+      "description": "",
+      "price": 4.50,
+      "image": "/sprite-395ml.jpg"
+    },
+    {
+      "id": "mojo-orange-juice",
+      "name": "Mojo Orange Juice",
+      "category": "Drinks",
+      "description": "",
+      "price": 5.20,
+      "image": "/mojo-orange-juice.jpg"
+    },
+    {
+      "id": "mojo-tropical-juice",
+      "name": "Mojo Tropical Juice",
+      "category": "Drinks",
+      "description": "Refreshing tropical blend of flavours.",
+      "price": 5.20,
+      "image": "/mojo-tropical-juice.jpg"
+    }
+  ]
+}

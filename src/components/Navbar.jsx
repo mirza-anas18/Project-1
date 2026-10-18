@@ -1,8 +1,8 @@
 
 function Navbar() {
   return (
-    <header className="container">
-      <nav className="navbar">
+    <header className="navbar-wrapper">
+      <nav className="navbar container">
         <a href="#" className="logo">
           KABABX
         </a>

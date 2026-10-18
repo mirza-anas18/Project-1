@@ -27,11 +27,8 @@ function Hero({ activeItem }) {
           </div>
 
           <div className="hero-actions">
+            
             <a href="#locations" className="btn btn-orange">
-              Find a shop
-            </a>
-
-            <a href="#locations" className="btn btn-dark">
               Order on Uber Eats
             </a>
           </div>

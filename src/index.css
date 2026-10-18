@@ -27,15 +27,22 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  
 }
-
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--bg-dark);
+}
 /* 1. TOP NAVBAR */
-.navbar {
+
+  .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 0;
-  border-bottom: 1px solid var(--border);
 }
 
 .logo {
@@ -115,8 +122,10 @@ body {
   align-items: start;
 }
 
+
 .spotlight-stage {
-  align-self: start;
+  align-self: stretch;
+  perspective: 1000px;
 }
 
 .eyebrow {
@@ -174,15 +183,6 @@ body {
   perspective: 1000px;
 }
 
-.spotlight-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1.5rem;
-  transform-style: preserve-3d;
-  transition: transform 0.15s ease-out, border-color 0.2s ease;
-  position: relative;
-}
 
 .spotlight-card:hover {
   border-color: rgba(255, 77, 28, 0.5);
@@ -190,23 +190,49 @@ body {
 
 /* The Radial Orange Ember Glow from your PDF */
 .food-photo-box {
-  height: 290px;
-  border-radius: 12px;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(255, 77, 28, 0.42) 0%,
-    rgba(160, 35, 10, 0.15) 45%,
-    rgba(18, 18, 22, 0.95) 80%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  display: flex;
-   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-  transform: translateZ(35px); /* 3D Pop-Out Layer! */
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  background: #242124;
+  border: none;
+  border-radius: 0;
+  display: block;
+  margin-bottom: 0;
+  transform: translateZ(0);
+  box-shadow: none;
 }
+
+
+.spotlight-card {
+  width: 100%;
+  height: 380px;
+  min-height: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+}
+
+.kebab-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(1.08) contrast(1.03);
+}
+
+@media (max-width: 768px) {
+  .spotlight-card {
+    height: 300px;
+  }
+}
+
 
 .food-emoji-3d {
   font-size: 4.5rem;
@@ -223,34 +249,31 @@ body {
   opacity: 0.85;
 }
 
+
 .spotlight-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  transform: translateZ(20px);
+  align-items: center;
+  padding: 1.5rem;
+  transform: translateZ(0);
 }
 
 .spotlight-footer h3 {
   font-family: var(--font-heading);
   font-size: 1.4rem;
   text-transform: uppercase;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.4rem;
 }
 
 .spotlight-footer p {
   color: var(--text-muted);
   font-size: 0.9rem;
+  line-height: 1.5;
 }
 
-.spotlight-price {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  color: var(--orange);
-}
 
 /* 4. BOTTOM HERO CATEGORY SWITCHER (Wraps, Kebab boxes, Chips, Drinks) */
 .hero-tabs {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
