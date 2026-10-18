@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import HERO_ITEMS from './data/menu.json';
+import HERO_ITEMS from './Data/Menu.json';
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
