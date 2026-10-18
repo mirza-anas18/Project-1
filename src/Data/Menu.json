@@ -12,18 +12,19 @@
     "price": "$—",
     "icon": "🌯"
   },
-  {
-    "id": "kebab-boxes",
-    "tabLabel": "Kebab boxes",
-    "eyebrow": "LOADED BOXES",
-    "title": "THE KEBABX BOX",
-    "cardTitle": "Kebab Box",
-    "description": "Grilled meat served with your choice of sides and sauces. Confirm details with the owner.",
-    "shortDesc": "A loaded kebab box",
-    "allergens": "To be confirmed",
-    "price": "$—",
-    "icon": "🥡"
-  },
+ {
+  "id": "hsps",
+  "tabLabel": "HSPs",
+  "image": "/src/assets/falafel-hsp.jpg",
+  "eyebrow": "LOADED & SAUCY",
+  "title": "THE KEBABX HSP",
+  "cardTitle": "Halal Snack Pack",
+  "description": "Golden chips loaded with kebab meat and your favourite sauces. Confirm ingredients with the owner.",
+  "shortDesc": "A loaded Aussie favourite",
+  "allergens": "To be confirmed",
+  "price": "$—",
+  "icon": "🍟"
+},
   {
     "id": "chips",
     "tabLabel": "Chips",
