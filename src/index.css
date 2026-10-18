@@ -317,3 +317,51 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+/* Stronger, punchier hero entrance */
+.kebab-image {
+  animation:
+    heroPopIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) both,
+    heroFloat 4s ease-in-out 1.1s infinite;
+  transform-origin: center center;
+}
+
+@keyframes heroPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.45) translateY(90px) rotate(-5deg);
+  }
+
+  55% {
+    opacity: 1;
+    transform: scale(1.12) translateY(-12px) rotate(2deg);
+  }
+
+  75% {
+    transform: scale(0.96) translateY(4px) rotate(-1deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kebab-image {
+    animation: none;
+    will-change: auto;
+  }
+}

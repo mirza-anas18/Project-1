@@ -1,8 +1,7 @@
 
 import { useState } from 'react';
-import kebabImage from '../assets/kebab.jpeg';
 
-function SpotlightCard() {
+function SpotlightCard({ activeItem }) {
   const [tiltStyle, setTiltStyle] = useState({
     transform: 'rotateX(0deg) rotateY(0deg)',
   });
@@ -39,8 +38,9 @@ function SpotlightCard() {
         onMouseLeave={handleMouseLeave}
       >
         <img
-          src={kebabImage}
-          alt="Freshly prepared kebab wrap"
+          key={activeItem.image}
+          src={activeItem.image}
+          alt={activeItem.title}
           className="kebab-image"
         />
       </div>

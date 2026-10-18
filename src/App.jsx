@@ -7,7 +7,7 @@ import CategoryTabs from './components/CategoryTabs';
 import Menu from './components/Menu';
 
 function App() {
-  const [activeTabId, setActiveTabId] = useState('wraps');
+  const [activeTabId, setActiveTabId] = useState('Kebabs');
 
   const activeItem =
     HERO_ITEMS.find((item) => item.id === activeTabId) ||
