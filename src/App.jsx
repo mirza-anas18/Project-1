@@ -25,7 +25,7 @@ function App() {
           activeTabId={activeTabId}
           setActiveTabId={setActiveTabId}
         />
-         <Menu />
+        <Menu />
       </main>
     </div>
   );
