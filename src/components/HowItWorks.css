@@ -1,0 +1,319 @@
+
+/* =========================
+   HOW IT WORKS SECTION
+========================= */
+
+.how-it-works {
+  position: relative;
+  isolation: isolate;
+  margin-top: 5rem;
+  padding: 4rem 0;
+  scroll-margin-top: 100px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Subtle orange ambient glow */
+
+.how-it-works::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -5rem;
+  right: -8rem;
+  width: 28rem;
+  height: 22rem;
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 77, 28, 0.09) 0%,
+    rgba(255, 77, 28, 0.025) 45%,
+    transparent 72%
+  );
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.how-heading {
+  margin-bottom: 2.5rem;
+}
+
+.how-eyebrow {
+  color: var(--orange);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 0.85rem;
+}
+
+.how-heading h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.how-heading h2 span {
+  color: var(--orange);
+}
+
+/* =========================
+   THREE-STEP CARD GRID
+========================= */
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+}
+
+/* Individual cards */
+
+.how-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.75rem;
+
+  background: linear-gradient(
+    145deg,
+    #1b1b20,
+    #121215
+  );
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.how-step:hover {
+  border-color: rgba(255, 77, 28, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+/* =========================
+   NUMBER AND EMOJI
+========================= */
+
+.how-step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
+}
+
+.how-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  height: 2.1rem;
+  padding: 0 0.65rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  background: rgba(255, 77, 28, 0.12);
+
+  color: var(--orange);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.how-step:hover .how-step-number {
+  background: var(--orange);
+  color: #fff;
+  border-color: var(--orange);
+}
+
+.how-step-emoji {
+  font-size: 1.7rem;
+  filter: drop-shadow(0 4px 10px rgba(255, 77, 28, 0.12));
+  transition: transform 0.25s ease;
+}
+
+.how-step:hover .how-step-emoji {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   STEP TEXT
+========================= */
+
+.how-step h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+}
+
+.how-step p {
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  max-width: 28ch;
+  margin: 0;
+}
+
+/* =========================
+   BOTTOM TAGLINE
+========================= */
+
+.how-tagline {
+  margin: 1.6rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.8;
+}
+
+.how-tagline::first-letter {
+  color: var(--orange);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .how-step {
+    padding: 1.4rem;
+  }
+
+  .how-step-top {
+    margin-bottom: 1.8rem;
+  }
+
+  .how-step h3 {
+    font-size: 1.35rem;
+  }
+
+  .how-step p {
+    font-size: 0.92rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .how-it-works {
+    margin-top: 3rem;
+    padding: 2.75rem 0;
+  }
+
+  .how-it-works::before {
+    top: -2rem;
+    right: -4rem;
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .how-heading {
+    margin-bottom: 1.75rem;
+  }
+
+  .how-heading h2 {
+    font-size: clamp(2.35rem, 9vw, 3.2rem);
+  }
+
+  /* Force one full-width card per row */
+
+  .how-steps {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    width: 100%;
+  }
+
+  .how-step {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 1.35rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+  }
+
+  .how-step + .how-step {
+    border-left: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+  }
+
+  .how-step-top {
+    margin-bottom: 1.25rem;
+  }
+
+  .how-step-number {
+    min-width: 2.2rem;
+    height: 2rem;
+    font-size: 0.82rem;
+  }
+
+  .how-step-emoji {
+    font-size: 1.5rem;
+  }
+
+  .how-step h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .how-step p {
+    max-width: none;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .how-tagline {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .how-step,
+  .how-step-number,
+  .how-step-emoji {
+    transition: none;
+  }
+
+  .how-step:hover {
+    transform: none;
+  }
+
+  .how-step:hover .how-step-emoji {
+    transform: none;
+  }
+}

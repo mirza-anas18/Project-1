@@ -1,4 +1,8 @@
 
+/* =========================
+   GLOBAL VARIABLES
+========================= */
+
 :root {
   --bg-dark: #0e0e10;
   --bg-card: #16161a;
@@ -47,53 +51,9 @@ body {
   padding: 0 1.5rem;
 }
 
-/* NAVBAR */
-
-.navbar-wrapper {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: rgba(14, 14, 16, 0.6);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 0;
-}
-
-.logo {
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--text-white);
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.nav-links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: var(--text-white);
-}
-
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
 
 .btn {
   padding: 0.75rem 1.4rem;
@@ -102,7 +62,9 @@ body {
   font-size: 0.9rem;
   cursor: pointer;
   border: 1px solid transparent;
-  transition: transform 0.15s ease, background-color 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -132,7 +94,9 @@ body {
   border-color: var(--text-white);
 }
 
-/* HERO SECTION */
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero {
   position: relative;
@@ -155,7 +119,9 @@ body {
   align-items: start;
 }
 
-/* SPOTLIGHT STAGE AND AMBIENT GLOW */
+/* =========================
+   SPOTLIGHT STAGE
+========================= */
 
 .spotlight-stage {
   position: relative;
@@ -183,7 +149,9 @@ body {
   filter: blur(35px);
 }
 
-/* HERO TEXT */
+/* =========================
+   HERO TEXT
+========================= */
 
 .eyebrow {
   color: var(--orange);
@@ -235,7 +203,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* SPOTLIGHT CARD */
+/* =========================
+   SPOTLIGHT CARD
+========================= */
 
 .spotlight-card {
   position: relative;
@@ -261,7 +231,9 @@ body {
   border-color: rgba(255, 77, 28, 0.3);
 }
 
-/* HERO IMAGE */
+/* =========================
+   HERO IMAGE
+========================= */
 
 .food-photo-box {
   position: relative;
@@ -293,9 +265,10 @@ body {
   width: 100%;
   height: 100%;
   min-height: 0;
-object-position: 70% center;
-  /*object-fit: cover;*/
   object-position: center;
+
+  /* Preserve your existing image sizing behaviour */
+  /* Add object-fit: cover if you want the image to fill the box */
 
   filter: brightness(1.06) contrast(1.04) saturate(1.04);
 
@@ -341,7 +314,9 @@ object-position: 70% center;
     );
 }
 
-/* FOOD LABELS */
+/* =========================
+   FOOD LABELS
+========================= */
 
 .food-emoji-3d {
   font-size: 4.5rem;
@@ -358,7 +333,9 @@ object-position: 70% center;
   opacity: 0.85;
 }
 
-/* SPOTLIGHT FOOTER */
+/* =========================
+   SPOTLIGHT FOOTER
+========================= */
 
 .spotlight-footer {
   display: flex;
@@ -381,7 +358,9 @@ object-position: 70% center;
   line-height: 1.5;
 }
 
-/* HERO CATEGORY SWITCHER */
+/* =========================
+   HERO CATEGORY SWITCHER
+========================= */
 
 .hero-tabs {
   margin-top: 1.5rem;
@@ -415,24 +394,9 @@ object-position: 70% center;
   color: #fff;
 }
 
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .hero-tabs {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* EXISTING HERO IMAGE CONTAINER STYLES */
+/* =========================
+   EXISTING HERO IMAGE CONTAINER
+========================= */
 
 .hero-image-container {
   position: relative;
@@ -470,4 +434,19 @@ object-position: 70% center;
   );
 
   filter: blur(35px);
+}
+
+/* =========================
+   HERO RESPONSIVE LAYOUT
+========================= */
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

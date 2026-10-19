@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import HERO_ITEMS from './Data/Menu.json';
-import './App.css';
+import './Menu.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CategoryTabs from './components/CategoryTabs';
 import Menu from './components/Menu';
+import HowItWorks from './components/HowItWorks';
 
 function App() {
   const [activeTabId, setActiveTabId] = useState('Kebabs');
@@ -26,6 +27,7 @@ function App() {
           setActiveTabId={setActiveTabId}
         />
         <Menu />
+          <HowItWorks />
       </main>
     </div>
   );
