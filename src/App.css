@@ -80,6 +80,7 @@
 
 /* Individual food card */
 
+
 .menu-card {
   display: flex;
   flex-direction: column;
@@ -126,6 +127,7 @@
   font-size: 1.15rem;
   line-height: 1.4;
   margin: 0 0 10px;
+  
 }
 
 .menu-card-info p {

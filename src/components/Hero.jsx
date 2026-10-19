@@ -6,33 +6,33 @@ function Hero({ activeItem }) {
     <section className="hero">
       <div className="hero-grid">
         <div>
-          <span className="eyebrow">
-            {activeItem.eyebrow}
-          </span>
+        <span className="eyebrow">
+              YOUR LOCAL KEBAB DESTINATION
+            </span>
 
-          <h1 className="hero-title">
-            {activeItem.title}
-          </h1>
+            <h1 className="hero-title">
+              BIG FLAVOUR.
+              <br />
+              EVERY CRAVING.
+            </h1>
 
-          <p className="hero-desc">
-            {activeItem.description}
-          </p>
+            <p className="hero-desc">
+              From kebabs and loaded HSPs to crispy chips
+              and refreshing drinks, explore the menu at
+              Kababs at Lonsdale and find something for
+              your next meal.
+            </p>
 
-          <div className="allergen-badge">
-            Allergens: {activeItem.allergens}
+            <div className="hero-actions">
+              <a href="#menu" className="btn btn-orange">
+                Explore the Menu <span aria-hidden="true">→</span>
+              </a>
+
+              <a href="#locations" className="btn btn-dark">
+                Find a Shop
+              </a>
+            </div>
           </div>
-
-          <div className="hero-price">
-            {activeItem.price}
-          </div>
-
-          <div className="hero-actions">
-            
-            <a href="#locations" className="btn btn-orange">
-              Order on Uber Eats
-            </a>
-          </div>
-        </div>
 
         <SpotlightCard activeItem={activeItem} />
       </div>
