@@ -12,7 +12,7 @@ function Navbar() {
   const navLinks = [
     { label: 'Menu', href: '#full-menu' },
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'VisitUs', href: '#VisitUs' },
+    { label: 'Visit Us', href: '#VisitUs' },
     { label: 'Reviews', href: '#reviews' },
   ];
 
@@ -32,7 +32,7 @@ function Navbar() {
           ))}
         </ul>
 
-        <a href="#locations" className="navbar-cta">
+        <a href="#VisitUs" className="navbar-cta">
           Find a shop
         </a>
 
@@ -41,7 +41,11 @@ function Navbar() {
           type="button"
           className={`navbar-toggle ${menuOpen ? 'is-open' : ''}`}
           onClick={() => setMenuOpen((open) => !open)}
-          aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-label={
+            menuOpen
+              ? 'Close navigation menu'
+              : 'Open navigation menu'
+          }
           aria-expanded={menuOpen}
           aria-controls="mobile-navigation"
         >
@@ -68,7 +72,7 @@ function Navbar() {
           ))}
 
           <a
-            href="#locations"
+            href="#VisitUs"
             className="mobile-nav-cta"
             tabIndex={menuOpen ? 0 : -1}
             onClick={closeMenu}

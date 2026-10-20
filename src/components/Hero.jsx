@@ -28,7 +28,7 @@ function Hero({ activeItem }) {
                 Explore the Menu <span aria-hidden="true">→</span>
               </a>
 
-              <a href="#locations" className="btn btn-dark">
+              <a href="#VisitUs" className="btn btn-dark">
                 Find a Shop
               </a>
             </div>
