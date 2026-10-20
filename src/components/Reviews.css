@@ -1,0 +1,247 @@
+
+.reviews-section {
+  background: #0e0e10;
+  color: #f3ebdd;
+  padding: 100px 24px;
+  scroll-margin-top: 130px;
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews-heading {
+  max-width: 720px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.reviews-eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #ff4d1c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.reviews-heading h2 {
+  margin: 0;
+  font-size: clamp(30px, 4.5vw, 52px);
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.reviews-heading h2 span {
+  color: #ff4d1c;
+}
+
+.reviews-heading p {
+  max-width: 520px;
+  margin: 18px auto 0;
+  color: #a5a5aa;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 28px 24px 22px;
+  background: #17171a;
+  border: 1px solid #29292d;
+  border-radius: 16px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff4d1c;
+  background: #1c1b1d;
+}
+
+.review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.review-stars {
+  color: #ff4d1c;
+  font-size: 18px;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.review-stars span {
+  color: #48484d;
+}
+
+.review-quote {
+  color: #ff4d1c;
+  font-family: Georgia, serif;
+  font-size: 56px;
+  line-height: 0.8;
+  opacity: 0.8;
+}
+
+.review-text {
+  margin: 0 0 18px;
+  color: #ded9d1;
+  font-size: 14px;
+  line-height: 1.85;
+  flex: 1;
+}
+
+.review-details,
+.review-extra {
+  margin: 0 0 10px;
+  color: #a5a5aa;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.review-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 17px 0;
+  margin-top: 4px;
+  border-top: 1px solid #303034;
+}
+
+.review-breakdown span {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #a5a5aa;
+  font-size: 12px;
+}
+
+.review-breakdown strong {
+  color: #f3ebdd;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.review-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid #303034;
+}
+
+.review-card-footer > span:first-child {
+  color: #77777d;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.review-google-mark {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  background: #f3ebdd;
+  border-radius: 50%;
+  color: #4285f4;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.reviews-cta {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.reviews-cta p {
+  margin: 0 0 18px;
+  color: #a5a5aa;
+  font-size: 14px;
+}
+
+.reviews-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 22px;
+  border: 1px solid #ff4d1c;
+  border-radius: 8px;
+  color: #f3ebdd;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.reviews-cta a:hover {
+  background: #ff4d1c;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-section {
+    padding: 72px 18px;
+    scroll-margin-top: 110px;
+  }
+
+  .reviews-heading {
+    margin-bottom: 34px;
+  }
+
+  .reviews-heading h2 {
+    letter-spacing: -0.8px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .review-card {
+    padding: 24px 20px 20px;
+  }
+
+  .reviews-cta {
+    margin-top: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .review-card,
+  .reviews-cta a {
+    transition: none;
+  }
+
+  .review-card:hover {
+    transform: none;
+  }
+}
