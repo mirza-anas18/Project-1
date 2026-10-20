@@ -30,7 +30,7 @@ function HowItWorks() {
     >
       <div className="how-heading">
         <p className="how-eyebrow">
-          THE KEBABX EXPERIENCE
+          THE KEBABS ON LONSDALE EXPERIENCE
         </p>
 
         <h2>

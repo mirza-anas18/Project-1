@@ -1,15 +1,22 @@
- import { useState } from 'react';
+
+import { useRef, useState } from 'react';
 import LONSDALE_MENU from '../Data/LonsdaleMenu.json';
 import MenuCard from './MenuCard';
 
 function Menu() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const categoryScrollRef = useRef(null);
+
+  const scrollCategories = (direction) => {
+    categoryScrollRef.current?.scrollBy({
+      left: direction * 180,
+      behavior: 'smooth',
+    });
+  };
 
   const categories = [
     'All',
-    ...new Set(
-      LONSDALE_MENU.items.map((item) => item.category)
-    ),
+    ...new Set(LONSDALE_MENU.items.map((item) => item.category)),
   ];
 
   const filteredItems =
@@ -27,21 +34,41 @@ function Menu() {
         <p>Find your favourites at Kebabs At Lonsdale.</p>
       </div>
 
-      <div className="menu-categories">
-        {categories.map((category) => (
-          <button
-            key={category}
-            type="button"
-            className={
-              activeCategory === category
-                ? 'menu-category active'
-                : 'menu-category'
-            }
-            onClick={() => setActiveCategory(category)}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="menu-category-nav">
+        <button
+          type="button"
+          className="category-arrow"
+          aria-label="Scroll categories left"
+          onClick={() => scrollCategories(-1)}
+        >
+          &#8249;
+        </button>
+
+        <div className="menu-categories" ref={categoryScrollRef}>
+          {categories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={
+                activeCategory === category
+                  ? 'menu-category active'
+                  : 'menu-category'
+              }
+              onClick={() => setActiveCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          className="category-arrow"
+          aria-label="Scroll categories right"
+          onClick={() => scrollCategories(1)}
+        >
+          &#8250;
+        </button>
       </div>
 
       <div className="menu-grid">

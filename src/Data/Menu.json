@@ -28,6 +28,7 @@
   {
     "id": "chips",
     "tabLabel": "Chips",
+    "image": "/src/assets/large-chips.jpg",
     "eyebrow": "HOT & CRISPY",
     "title": "LOADED CHIPS & SIDES",
     "cardTitle": "Chips & Sides",
@@ -40,6 +41,7 @@
   {
     "id": "drinks",
     "tabLabel": "Drinks",
+   "image": "/src/assets/Drinks.jpg",
     "eyebrow": "ICE COLD",
     "title": "DRINKS & REFRESHERS",
     "cardTitle": "Cold Drinks",

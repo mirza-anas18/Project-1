@@ -4,7 +4,7 @@ import "./VisitUs.css";
 const locations = [
   {
     id: "lonsdale",
-    name: "Kababs at Lonsdale",
+    name: "Kebabs On Lonsdale",
     address: "245 Lonsdale Street, Melbourne VIC 3000, Australia",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=245%20Lonsdale%20Street%2C%20Melbourne%20VIC%203000%2C%20Australia",

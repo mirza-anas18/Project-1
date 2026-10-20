@@ -24,8 +24,8 @@ function Hero({ activeItem }) {
             </p>
 
             <div className="hero-actions">
-              <a href="#menu" className="btn btn-orange">
-                Explore the Menu <span aria-hidden="true">→</span>
+              <a href='#order-online' className="btn btn-orange">
+                ORDER ONLINE <span aria-hidden="true">→</span>
               </a>
 
               <a href="#VisitUs" className="btn btn-dark">

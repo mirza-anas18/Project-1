@@ -1,0 +1,234 @@
+
+/* =========================
+   ORDER ONLINE SECTION
+========================= */
+
+.order-online {
+  position: relative;
+  width: 100%;
+  padding: 100px 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255, 77, 28, 0.09),
+      transparent 65%
+    ),
+    #0e0e10;
+  border-top: 1px solid rgba(243, 235, 221, 0.07);
+  border-bottom: 1px solid rgba(243, 235, 221, 0.07);
+}
+
+.order-online-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Small orange label */
+
+.order-online-eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ff4d1c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+}
+
+/* Main heading */
+
+.order-online-title {
+  margin: 0;
+  color: #f3ebdd;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+/* Description */
+
+.order-online-desc {
+  max-width: 540px;
+  margin: 22px auto 0;
+  color: #a5a5aa;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* Ordering buttons */
+
+.order-online-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.order-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 0 26px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.order-btn span {
+  font-size: 1.1rem;
+  transition: transform 0.25s ease;
+}
+
+.order-btn:hover span {
+  transform: translate(2px, -2px);
+}
+
+.order-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Uber Eats */
+
+.uber-eats-btn {
+  color: #121214;
+  background: #06c167;
+  border-color: #06c167;
+}
+
+.uber-eats-btn:hover {
+  background: #12d477;
+  border-color: #12d477;
+  box-shadow: 0 8px 28px rgba(6, 193, 103, 0.18);
+}
+
+/* DoorDash */
+
+.doordash-btn {
+  color: #f3ebdd;
+  background: #202024;
+  border-color: rgba(243, 235, 221, 0.18);
+}
+
+.doordash-btn:hover {
+  background: #29292d;
+  border-color: #ff4d1c;
+  box-shadow: 0 8px 28px rgba(255, 77, 28, 0.12);
+}
+
+/* Delivery note */
+
+.order-online-note {
+  margin: 24px 0 0;
+  color: #77777e;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+/* Keyboard accessibility */
+
+.order-btn:focus-visible {
+  outline: 2px solid #f3ebdd;
+  outline-offset: 4px;
+}
+
+/* =========================
+   TABLET & MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .order-online {
+    padding: 76px 22px;
+  }
+
+  .order-online-eyebrow {
+    margin-bottom: 16px;
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+  }
+
+  .order-online-desc {
+    margin-top: 18px;
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .order-online-buttons {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .order-btn {
+    min-height: 52px;
+    padding: 0 20px;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-online {
+    padding: 64px 18px;
+  }
+
+  .order-online-title {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .order-online-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .order-btn {
+    width: 100%;
+    min-height: 54px;
+  }
+
+  .order-online-note {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.74rem;
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .order-btn,
+  .order-btn span {
+    transition: none;
+  }
+
+  .order-btn:hover {
+    transform: none;
+  }
+}

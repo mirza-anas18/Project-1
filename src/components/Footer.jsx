@@ -10,7 +10,7 @@ function Footer() {
         <div className="footer-main">
           <div className="footer-brand">
             <a href="#top" className="footer-logo">
-              KABABS <span>AT LONSDALE</span>
+              KABABS <span>ON LONSDALE</span>
             </a>
 
             <p className="footer-tagline">
@@ -33,7 +33,7 @@ function Footer() {
 
           <div className="footer-locations">
             <h3>FIND US</h3>
-            <a href="#visit-us">Kababs at Lonsdale</a>
+            <a href="#visit-us">Kebabs On Lonsdale</a>
             <a href="#visit-us">Kebab On Hoddle</a>
             <a href="#VisitUs" className="footer-directions">
               Visit Our Locations <span>↗</span>

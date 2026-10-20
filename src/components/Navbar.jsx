@@ -21,7 +21,7 @@ function Navbar() {
       <nav className="navbar" aria-label="Main navigation">
         <a href="#" className="logo" onClick={closeMenu}>
          KABABS
-  <span>AT LONSDALE</span>
+  <span>ON LONSDALE</span>
         </a>
 
         {/* Desktop navigation */}

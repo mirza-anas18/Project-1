@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import HERO_ITEMS from './Data/Menu.json';
-import './Menu.css';
+import './components/Menu.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CategoryTabs from './components/CategoryTabs';
@@ -9,6 +9,7 @@ import HowItWorks from './components/HowItWorks';
 import VisitUs from './components/VisitUs';
 import Reviews from "./components/Reviews";
 import Footer from './components/Footer';
+import OrderOnline from './components/OrderOnline';
 
 function App() {
   const [activeTabId, setActiveTabId] = useState('Kebabs');
@@ -30,6 +31,7 @@ function App() {
           setActiveTabId={setActiveTabId}
         />
         <Menu />
+        <OrderOnline />
           <HowItWorks />
           <VisitUs />
           <Reviews />
