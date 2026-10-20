@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import CategoryTabs from './components/CategoryTabs';
 import Menu from './components/Menu';
 import HowItWorks from './components/HowItWorks';
+import VisitUs from './components/VisitUs';
 
 function App() {
   const [activeTabId, setActiveTabId] = useState('Kebabs');
@@ -28,6 +29,7 @@ function App() {
         />
         <Menu />
           <HowItWorks />
+          <VisitUs />
       </main>
     </div>
   );

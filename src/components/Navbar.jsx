@@ -12,7 +12,7 @@ function Navbar() {
   const navLinks = [
     { label: 'Menu', href: '#full-menu' },
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Locations', href: '#locations' },
+    { label: 'VisitUs', href: '#VisitUs' },
     { label: 'Reviews', href: '#reviews' },
   ];
 

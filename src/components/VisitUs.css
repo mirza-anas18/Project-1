@@ -1,0 +1,221 @@
+
+.VisitUs {
+  background: #121214;
+  color: #f3ebdd;
+  padding: 100px 24px;
+  scroll-margin-top: 130px;
+}
+
+.visit-us__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visit-us__heading {
+  max-width: 650px;
+  margin-bottom: 48px;
+}
+
+.visit-us__eyebrow {
+  display: inline-block;
+  color: #ff4d1c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 16px;
+}
+
+.visit-us__heading h2 {
+  margin: 0;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.visit-us__heading h2 span {
+  color: #ff4d1c;
+}
+
+.visit-us__heading p {
+  max-width: 480px;
+  margin-top: 18px;
+  color: #a5a5aa;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.visit-us__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.visit-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 30px;
+  background: #1a1a1e;
+  border: 1px solid #303034;
+  border-radius: 18px;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.visit-card:hover {
+  border-color: #ff4d1c;
+  transform: translateY(-4px);
+}
+
+.visit-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.visit-card__label {
+  color: #a5a5aa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.visit-card__icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #3a302c;
+  border-radius: 50%;
+  color: #ff4d1c;
+  font-size: 24px;
+}
+
+.visit-card h3 {
+  margin: 0 0 18px;
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: 1.2;
+}
+
+.visit-card__address {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 30px;
+  color: #c1c1c5;
+}
+
+.visit-card__address > span {
+  color: #ff4d1c;
+  font-size: 22px;
+}
+
+.visit-card__address p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.visit-card__hours {
+  padding-top: 22px;
+  border-top: 1px solid #303034;
+}
+
+.visit-card__hours h4 {
+  margin: 0 0 16px;
+  color: #a5a5aa;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.visit-card__day {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #29292d;
+  font-size: 13px;
+}
+
+.visit-card__day span:first-child {
+  color: #c1c1c5;
+}
+
+.visit-card__day span:last-child {
+  color: #f3ebdd;
+  text-align: right;
+}
+
+.visit-card__directions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 26px;
+  padding: 16px 18px;
+  background: #ff4d1c;
+  border: 1px solid #ff4d1c;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.visit-card__directions:hover {
+  background: transparent;
+  color: #ff4d1c;
+}
+
+.visit-card__directions span:last-child {
+  font-size: 18px;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+  .VisitUs {
+    padding: 72px 18px;
+    scroll-margin-top: 110px;
+  }
+
+  .visit-us__heading {
+    margin-bottom: 32px;
+  }
+
+  .visit-us__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .visit-card {
+    padding: 24px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 380px) {
+  .visit-card {
+    padding: 20px 16px;
+  }
+
+  .visit-card__day {
+    font-size: 12px;
+    gap: 10px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .visit-card,
+  .visit-card__directions {
+    transition: none;
+  }
+}
