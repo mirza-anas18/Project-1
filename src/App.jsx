@@ -8,6 +8,7 @@ import Menu from './components/Menu';
 import HowItWorks from './components/HowItWorks';
 import VisitUs from './components/VisitUs';
 import Reviews from "./components/Reviews";
+import Footer from './components/Footer';
 
 function App() {
   const [activeTabId, setActiveTabId] = useState('Kebabs');
@@ -33,6 +34,7 @@ function App() {
           <VisitUs />
           <Reviews />
       </main>
+      <Footer />
     </div>
   );
 }
