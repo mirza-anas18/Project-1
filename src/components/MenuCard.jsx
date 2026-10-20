@@ -21,6 +21,8 @@ function MenuCard({ item }) {
           className="menu-card-image"
           src={imagePath}
           alt={item.name}
+          loading="lazy"
+          decoding="async"
         />
       )}
 

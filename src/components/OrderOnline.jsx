@@ -16,7 +16,7 @@ function OrderOnline() {
         </h2>
 
         <p className="order-online-desc">
-          Order your favourites from Kababs at Lonsdale
+          Order your favourites from Kababs On Lonsdale
           through your preferred delivery platform.
         </p>
 
