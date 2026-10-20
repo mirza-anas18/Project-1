@@ -450,3 +450,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
