@@ -20,7 +20,7 @@ function Navbar() {
     <header className="navbar-wrapper">
       <nav className="navbar" aria-label="Main navigation">
         <a href="#" className="logo" onClick={closeMenu}>
-         KABABS
+         KEBABS
   <span>ON LONSDALE</span>
         </a>
 

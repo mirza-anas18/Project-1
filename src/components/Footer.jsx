@@ -10,7 +10,7 @@ function Footer() {
         <div className="footer-main">
           <div className="footer-brand">
             <a href="#top" className="footer-logo">
-              KABABS <span>ON LONSDALE</span>
+              KEBABS <span>ON LONSDALE</span>
             </a>
 
             <p className="footer-tagline">
