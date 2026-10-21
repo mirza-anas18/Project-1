@@ -43,7 +43,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>
-            © {currentYear} Kababs at Lonsdale
+            © {currentYear} Kababs On Lonsdale
           </p>
 
           <a href="#top" className="footer-back-to-top">
