@@ -9,13 +9,13 @@ const locations = [
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=245%20Lonsdale%20Street%2C%20Melbourne%20VIC%203000%2C%20Australia",
     hours: [
-      ["Monday", "Confirm with store"],
-      ["Tuesday", "Confirm with store"],
-      ["Wednesday", "Confirm with store"],
-      ["Thursday", "Confirm with store"],
-      ["Friday", "Confirm with store"],
-      ["Saturday", "Confirm with store"],
-      ["Sunday", "Confirm with store"],
+      ["Monday", "10:30 am – 5:00 am"],
+      ["Tuesday", "10:30 am – 5:00 am"],
+      ["Wednesday", "10:30 am – 5:00 am"],
+      ["Thursday", "10:30 am – 6:00 am"],
+      ["Friday", "10:30 am – 7:00 am"],
+      ["Saturday", "10:00 am – 7:00 am"],
+      ["Sunday", "10:30 am – 5:00 am"],
     ],
   },
   {
